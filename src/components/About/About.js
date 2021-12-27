@@ -6,6 +6,8 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import homeLogo from "../../Assets/headshot.png";
+
 
 function About() {
   return (
@@ -13,39 +15,19 @@ function About() {
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
-            </h1>
-            <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
+        <img src={homeLogo} alt="home pic" className="img-fluid" />
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+        <h1>About Me</h1>
+        <p>I am a woman who loves working with others on amazing projects. I'm a singer in two choirs, cyclist and amateur axe thrower. Below you can find my proficient languages, and examples of their uses in my projects. </p>
+        <p> To get in touch with me please email: </p> <a href="mailto:kaitlin.decf@gmail.com">kaitlin.decf@gmail.com</a>
+        <br /> 
+        <h1 className="projet-heading">
+          Languages
         </h1>
 
         <Techstack />
+        <h1>About Me</h1>
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
       </Container>
     </Container>
   );
