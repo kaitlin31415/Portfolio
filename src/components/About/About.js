@@ -21,6 +21,15 @@ function About() {
               paddingBottom: "50px",
             }}
           >
+            <div id="retainable-rss-embed"
+              data-rss="https://medium.com/feed/@kaitlin-finnigan"
+              data-maxcols="3"
+              data-layout="grid"
+              data-poststyle="inline"
+              data-readmore="Read the rest"
+              data-buttonclass="btn btn-primary"
+              data-offset="-100"></div>
+            <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js" />
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
