@@ -1,16 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/headshot.png";
-import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
+
 import * as Constants from "../../Constants.js";
+import {
+  AiFillGithub,
+
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
+
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -31,9 +34,35 @@ function Home() {
               <img src={homeLogo} alt="home pic" className="img-fluid" />
             </Col>
           </Row>
+
+          <Row>
+          <Col md={12} className="home-about-social">
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href={Constants.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href={Constants.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }
